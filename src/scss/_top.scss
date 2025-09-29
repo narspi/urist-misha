@@ -1,0 +1,41 @@
+.top {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)), url("../img/top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 310px;
+    padding-bottom: 70px;
+    display: flex;
+
+    &__content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+        text-align: center;
+    }
+
+    &__descr {
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &__btn {
+        margin: 5px auto 0;
+        text-align: center;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

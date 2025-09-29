@@ -1,3 +1,11 @@
 import Swiper from "swiper";
 
-console.log(Swiper)
+document.addEventListener("DOMContentLoaded", () => {
+    const cases = document.querySelectorAll('.cases__item-slider');
+
+    cases.forEach((elem)=>{
+        new Swiper(elem, {
+            
+        })
+    })
+});
