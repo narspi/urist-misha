@@ -1,0 +1,30 @@
+.price {
+    padding: 50px 0 100px;
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin: 20px 0;
+
+
+        & th,
+        & td {
+            border: 1px solid #eee;
+            padding: 12px;
+            text-align: left;
+        }
+
+
+        & th {
+            background-color: #eee;
+            color: #000;
+            font-weight: bold;
+        }
+
+        & tr:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

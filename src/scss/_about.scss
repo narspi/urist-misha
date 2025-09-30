@@ -1,9 +1,10 @@
+@use "var";
+
 .about {
     padding: 50px 0;
 
     &__content {
         display: flex;
-
         gap: 50px;
         margin: 50px auto 0;
         font-size: 18px;
@@ -16,5 +17,50 @@
         }
     }
 
+    &__form-title {
+        margin: 100px 0 40px;
+        font-size: 36px;
+        line-height: 1.23;
+        font-weight: 400;
+        font-family: var.$accent-font;
+        text-align: center;
+    }
 
+    &__form-row {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__form-input {
+        color: #000000;
+        border: 1px solid #c9c9c9;
+        border-radius: 5px;
+        padding: 20px;
+        flex-grow: 1;
+
+        &:focus {
+            outline: 2px solid #eee;
+            outline-offset: 2px;
+        }
+    }
+
+    &__form-submit {
+        border-radius: 5px;
+        max-width: unset;
+        flex-grow: 1;
+    }
+
+    &__form-policy {
+        max-width: 900px;
+        margin: 10px auto 0;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+
+        & a {
+            text-decoration: underline;
+        }
+    }
 }

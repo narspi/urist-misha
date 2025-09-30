@@ -1,0 +1,107 @@
+@use "var";
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: var.$accent-font;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    &__social {
+        display: flex;
+        gap: 5px;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    &__social-link {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &--tg {
+            background-image: url("../img/icons/telegram.svg");
+        }
+
+        &--whatsup {
+            background-image: url("../img/icons/whatsup.svg");
+        }
+    }
+
+    &__phone {
+        font-family: var.$accent-font;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    &__bottom {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__policy,
+    &__copy {
+        margin: 5px 0 0;
+    }
+
+    &__policy a {
+        text-decoration: underline;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__form-input {
+        color: #000000;
+        border: 1px solid #c9c9c9;
+        border-radius: 5px;
+        padding: 10px;
+        flex-grow: 1;
+
+        &:focus {
+            outline: 2px solid #eee;
+            outline-offset: 2px;
+        }
+    }
+
+    &__form-submit {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        font-family: var.$accent-font;
+        text-transform: uppercase;
+        font-size: 18;
+        font-weight: 400;
+        padding: 11px;
+    }
+}

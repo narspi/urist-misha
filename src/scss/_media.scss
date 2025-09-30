@@ -1,0 +1,17 @@
+.media {
+    padding: 50px 0;
+
+    &__content {
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    &__item {
+        width: 100%;
+    }
+
+    &__item-img {
+        width: 100%;
+    }
+}
