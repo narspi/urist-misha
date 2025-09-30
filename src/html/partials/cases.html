@@ -2,14 +2,18 @@
     <div class="container">
         <h2 class="title">Выигранные дела</h2>
         <div class="cases__list">
+            {{#repeat 8}}
             <article class="cases__item">
-                <img src="/img/cases/211717.jpg" alt="bla" class="cases__img">
+                <div class="cases__pic">
+                    <img src="/img/cases/211717.jpg" alt="bla" class="cases__img">
+                </div>
                 <div class="cases__item-content">
-                    <h3 class="cases__item-title">Дело О наркотиках</h3>
-                    <p class="cases__item-descr">Суд постановил, выпустить обвиняемого из зала суда</p>
-                    <button class="btn-main">Обратится за помощью</button>
+                    <h3 class="cases__item-title">Дело о сбыте наркотиков в особо крупном размере</h3>
+                    <button class="cases__btn">Посмотреть приговор</button>
+                    <button class="cases__btn">Обратится за помощью</button>
                 </div>
             </article>
+            {{/repeat }}
         </div>
     </div>
 </section>

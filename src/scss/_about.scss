@@ -1,0 +1,20 @@
+.about {
+    padding: 50px 0;
+
+    &__content {
+        display: flex;
+
+        gap: 50px;
+        margin: 50px auto 0;
+        font-size: 18px;
+        line-height: 1.55;
+
+        & ul {
+            list-style-type: upper-roman;
+            padding-left: 1em;
+            font-weight: 400;
+        }
+    }
+
+
+}

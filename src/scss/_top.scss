@@ -1,6 +1,6 @@
 .top {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)), url("../img/top-bg.jpg");
+    background-image: url("../img/misha-without-bg.png"),linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)), url("../img/top-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
