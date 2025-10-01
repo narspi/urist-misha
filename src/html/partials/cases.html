@@ -1,16 +1,37 @@
 <section id="cases" class="cases">
     <div class="container">
         <h2 class="title">Выигранные дела</h2>
-        <div class="cases__list">   
+        <div class="cases__list">
             {{#repeat 8}}
             <article class="cases__item">
-                <div class="cases__pic">
-                    <img src="/img/cases/1.jpg" alt="bla" class="cases__img">
+                <div class="cases__item-left">
+                    <div class="cases__pic">
+                        <img src="/img/cases/1.jpg" alt="bla" class="cases__img">
+                    </div>
+                    <div class="cases__item-content">
+                        <h3 class="cases__item-title">Условный срок – 4 года по ч.4 ст.228.1 УК РФ.</h3>
+                        <button class="cases__btn"
+                            data-galery="['/img/cases/211717.jpg','/img/cases/212851.jpg','/img/cases/212934.jpg']">Посмотреть
+                            приговор</button>
+                        <button class="cases__btn" data-modal="help">Обратится за помощью</button>
+                    </div>
                 </div>
-                <div class="cases__item-content">
-                    <h3 class="cases__item-title">Дело о сбыте наркотиков в особо крупном размере</h3>
-                    <button class="cases__btn" data-galery="['/img/cases/211717.jpg','/img/cases/212851.jpg','/img/cases/212934.jpg']">Посмотреть приговор</button>
-                    <button class="cases__btn" data-modal="help">Обратится за помощью</button>
+                <div class="cases__item-right">
+                    <p>
+                        Органом предварительного следствия в отношении Б. было возбуждено уголовное дело по ч.4 ст.228.1 УК РФ как покушение на сбыт наркотических средств в крупном размере.
+                    </p>
+                    <p>
+                        С самого начала следствия нами была выбрана позиция о полном признании вины. Целью моей работы, стало назначение минимального наказания.
+                    </p>
+                    <p>
+                        Одной из сложностей дела явился тот факт, что Б. в момент совершения преступления находилась в состоянии наркотического опьянения, что квалифицировалось органами следствия как отягчающее обстоятельство.
+                    </p>
+                    <p>
+                        В ходе судебного разбирательства разбирательства удалось убедить прокуратуру и судью в том, предъявление отягчающего обстоятельства в нашем случае является излишнем, что дало возможность, с учетом всех смягчающих обстоятельств, применить в отношении моей доверительницы возможности назначить наказание ниже низшего предела, установленной санкцией ч.4 ст.228.1 УК РФ.
+                    </p>
+                    <p class="cases__item-result">
+                        В итоге было назначено наказание в виде четырех лет условного осуждения.
+                    </p>
                 </div>
             </article>
             {{/repeat }}
