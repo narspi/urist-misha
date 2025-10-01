@@ -48,7 +48,7 @@ const createCss = () => {
       [
         autoprefixer(),
         cssnamo({
-            preset: 'default',
+          preset: 'default',
         })
       ]
     ))
@@ -68,7 +68,7 @@ const createCssTheme = () => {
       [
         autoprefixer(),
         cssnamo({
-            preset: 'default',
+          preset: 'default',
         })
       ]
     ))

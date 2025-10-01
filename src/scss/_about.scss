@@ -39,6 +39,8 @@
         border-radius: 5px;
         padding: 20px;
         flex-grow: 1;
+        font-weight: 400;
+        font-family: var.$accent-font;
 
         &:focus {
             outline: 2px solid #eee;
