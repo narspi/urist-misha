@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalList = document.querySelectorAll('[data-modal]');
     const btnCloseList = document.querySelectorAll('.form-popup__close');
     const galeryOpenBtnList = document.querySelectorAll('[data-galery]');
-
-    console.log(GLightbox)
+    const forms = document.querySelectorAll('[data-send]');
 
     modalList.forEach((elem) => {
         elem.addEventListener('click', (e) => {
@@ -65,6 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 gallery.open();
             }
+        })
+    });
+
+    forms.forEach((form) => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+
+            fetch('/send.php', {
+                method: 'POST',
+                body: formData
+            }).then(res => res.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        showSuccessMessage()
+                    } else {
+                        alert('Упс что пошло не так. Попробуйте позже!')
+                    }
+                }).catch(err => {
+                    alert('Упс что пошло не так. Попробуйте позже!')
+                    console.log(err);
+                })
         })
     })
 });

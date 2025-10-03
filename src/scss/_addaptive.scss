@@ -184,8 +184,8 @@
     .top {
         &__content {
             padding-top: 15px;
-            margin-left: 15px;
-            margin-right: 15px;
+            margin-left: max(15px,auto);
+            margin-right: max(15px,auto);
         }
 
         &__title {
