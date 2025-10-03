@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }).then(res => res.json())
                 .then(data => {
                     if (data.status === "success") {
-                        showSuccessMessage()
+                        alert('Спасибо. Ваша заявка отправлена!')
                     } else {
                         alert('Упс что пошло не так. Попробуйте позже!')
                     }
