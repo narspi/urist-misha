@@ -32,7 +32,7 @@
     }
 
     .about {
-        &__content {    
+        &__content {
             display: grid;
             gap: 20px;
             grid-template-columns: 2fr 3fr;
@@ -184,8 +184,8 @@
     .top {
         &__content {
             padding-top: 15px;
-            margin-left: max(15px,auto);
-            margin-right: max(15px,auto);
+            margin-left: max(15px, calc((100% - 471px) / 2));
+            margin-right: max(15px, calc((100% - 471px) / 2));
         }
 
         &__title {
@@ -241,5 +241,19 @@
 
     .price {
         padding: 25px 0 50px;
+    }
+
+    .form-popup {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__elem {
+            padding: 20px;
+        }
+
+        &__policy {
+            font-size: 12px;
+        }
     }
 }

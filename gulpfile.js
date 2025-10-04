@@ -117,7 +117,7 @@ const transportImg = () => {
 
 const transportFiles = () => {
   return src("./src/assets/**/*.*", { encoding: false }).pipe(
-    dest("dist/assets")
+    dest("dist/")
   );
 };
 
