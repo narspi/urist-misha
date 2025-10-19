@@ -108,7 +108,42 @@
     }
 
     .footer {
-        padding-bottom: 100px;
+        &__bottom {
+            padding-bottom: 100px;
+        }
+
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__menu {
+            margin: 0;
+            text-align: center;
+        }
+
+        &__left {
+            text-align: center;
+            display: contents;
+        }
+
+        &__logo {
+            justify-content: center;
+        }
+
+        &__copy, &__policy {
+            order: 2;
+            margin: 0;
+        }
+
+        &__right {
+            text-align: center;
+        }
+
+        &__bottom-descr {
+            margin: 0 auto;
+            max-width: 500px;
+        }
     }
 
     .top {
