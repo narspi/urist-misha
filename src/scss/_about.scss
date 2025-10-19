@@ -28,19 +28,39 @@
         min-width: 0;
     }
 
+    &__bot {
+        display: flex;
+        gap: 30px;
+        max-width: 900px;
+        margin: 100px auto 0;
+    }
+
+    &__bot-left {
+        width: 100%;
+    }
+
+    &__form-list {
+        font-size: 18px;
+        padding-left: 1em;
+        margin: 0;
+        font-weight: 400;
+    }
+
     &__form-title {
-        margin: 100px 0 40px;
+        margin: 0 0 15px;
         font-size: 36px;
         line-height: 1.23;
         font-weight: 400;
         font-family: var.$accent-font;
-        text-align: center;
+    }
+
+    &__form {
+        width: 100%;
     }
 
     &__form-row {
-        max-width: 900px;
-        margin: 0 auto;
         display: flex;
+        flex-direction: column;
         gap: 15px;
     }
 
@@ -66,11 +86,9 @@
     }
 
     &__form-policy {
-        max-width: 900px;
-        margin: 10px auto 0;
         font-weight: 400;
         color: #000000;
-        text-align: center;
+        margin-bottom: 0;
 
         & a {
             text-decoration: underline;

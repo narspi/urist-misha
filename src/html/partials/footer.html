@@ -34,6 +34,7 @@
 <div class="form-popup" id="callback">
     <div class="form-popup__inner">
         <form class="form-popup__elem" data-send>
+            <input type="hidden" name="form-name" value="Заказать звонок">
             <p class="form-popup__title">Заказать звонок</p>
             <input class="form-popup__input" type="text" name="name" placeholder="Ваше имя">
             <input class="form-popup__input" type="tel" name="tel" placeholder="Ваш телефон">
@@ -51,7 +52,26 @@
 <div class="form-popup" id="help">
     <div class="form-popup__inner">
         <form class="form-popup__elem" data-send>
+            <input type="hidden" name="form-name" value="Нужна помощь?">
             <p class="form-popup__title">Нужна помощь?</p>
+            <input class="form-popup__input" type="text" name="name" placeholder="Ваше имя">
+            <input class="form-popup__input" type="tel" name="tel" placeholder="Ваш телефон">
+
+            <button class="btn-main form-popup__submit" type="submit">Оставить заявку</button>
+            <p class="form-popup__policy">
+                Оставляя заявку на консультацию, вы автоматически соглашаетесь с <a href="./policy.html"
+                    target="_blank">политикой
+                    конфеденциальности</a>
+            </p>
+        </form>
+    </div>
+    <button class="form-popup__close" aria-label="Закрыть окно"></button>
+</div>
+<div class="form-popup" id="departure">
+    <div class="form-popup__inner">
+        <form class="form-popup__elem" data-send>
+            <input type="hidden" name="form-name" value="Срочный выезд!">
+            <p class="form-popup__title">Срочный выезд!</p>
             <input class="form-popup__input" type="text" name="name" placeholder="Ваше имя">
             <input class="form-popup__input" type="tel" name="tel" placeholder="Ваш телефон">
 

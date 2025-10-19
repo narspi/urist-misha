@@ -16,17 +16,28 @@
                     добился прекращения уголовного дела по реабилитирующим основаниям.</p>
             </div>
         </div>
-        <p class="about__form-title">Быстрая заявка на консультацию</p>
-        <form class="about__form" data-send>
-            <div class="about__form-row">
-                <input class="about__form-input" type="text" name="name" placeholder="Ваше Имя">
-                <input class="about__form-input" type="tel" name="tel" placeholder="Ваш Телефон">
-                <button class="btn-main about__form-submit" type="submit">Отправить</button>
+
+        <div class="about__bot">
+            <div class="about__bot-left">
+                <p class="about__form-title">Оставьте заявку</p>
+                <ol class="about__form-list">
+                    <li>Ознакомлюсь с материалами дела</li>
+                    <li>Оценю перспективы дела </li>
+                    <li>Предоставлю консультацию по вашему делу</li>
+                </ol>
+                <p class="about__form-policy">
+                    Оставляя заявку на консультацию, вы автоматически соглашаетесь с <a href="./policy.html">политикой
+                        конфеденциальности</a>
+                </p>
             </div>
-            <p class="about__form-policy">
-                Оставляя заявку на консультацию, вы автоматически соглашаетесь с <a href="./policy.html">политикой
-                    конфеденциальности</a>
-            </p>
-        </form>
+            <form class="about__form" data-send>
+                <div class="about__form-row">
+                    <input type="hidden" name="form-name" value="Форма обо мне">
+                    <input class="about__form-input" type="text" name="name" placeholder="Ваше Имя">
+                    <input class="about__form-input" type="tel" name="tel" placeholder="Ваш Телефон">
+                    <button class="btn-main about__form-submit" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
