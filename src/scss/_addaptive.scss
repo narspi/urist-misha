@@ -4,13 +4,35 @@
     }
 }
 
-
 @media (max-width: 1200px) {
     .top {
         background-position: top 50px left -250px, top center, top center;
+        min-height: unset;
+
+        &__content {
+            margin-left: 150px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__info {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
 
         &__notice {
-            display: none;
+            font-size: 18px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            max-width: 552px;
+        }
+
+        &__btns-row {
+            max-width: 300px;
         }
     }
 
@@ -131,7 +153,8 @@
             justify-content: center;
         }
 
-        &__copy, &__policy {
+        &__copy,
+        &__policy {
             order: 2;
             margin: 0;
         }
@@ -148,19 +171,23 @@
 
     .top {
         background-position: top center, top center, top center;
-
-        &__notice {
-            display: none;
-        }
+        padding-top: 279px;
 
         &__content {
             padding-top: 15px;
             background: rgba(0, 0, 0, 0.5);
             color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin: auto;
         }
 
-        &__btn {
-            padding-bottom: 10px;
+        &__btns-row {
+            margin: 20px auto 0;
+        }
+
+        &__info {
+            margin-bottom: 20px;
         }
     }
 
@@ -243,14 +270,14 @@
     }
 
     .top {
-        &__content {
-            padding-top: 15px;
-            margin-left: max(15px, calc((100% - 471px) / 2));
-            margin-right: max(15px, calc((100% - 471px) / 2));
-        }
+        padding-top: 250px;
 
         &__title {
             font-size: 28px;
+        }
+
+        &__descr {
+            display: none;
         }
     }
 
@@ -328,6 +355,25 @@
 
         &__policy {
             font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        &__logo {
+            font-size: 12px;
+            max-width: 218px;
+
+            & img {
+                width: 50px;
+                height: 50px;
+                margin-left: -15px;
+            }
+
+            & span br {
+                display: none;
+            }
         }
     }
 }
