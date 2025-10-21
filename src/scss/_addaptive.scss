@@ -70,26 +70,6 @@
         }
     }
 
-    .media {
-        &__content {
-            gap: 20px;
-            margin-top: 20px;
-            grid-template-columns: 1fr;
-        }
-
-        &__pic {
-            display: none;
-        }
-
-        &__btn {
-            margin: 0 auto;
-        }
-
-        &__body {
-            font-size: 14px;
-        }
-    }
-
     .price {
         font-size: 14px;
     }
@@ -170,15 +150,29 @@
     }
 
     .top {
-        background-position: top center, top center, top center;
-        padding-top: 279px;
+        background-image: none;
+        padding-top: 500px;
+        padding-bottom: 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            background-image: url("../img/top-bg-phone.webp"), linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("../img/top-bg.jpg");
+            background-position: bottom -200px center, top center, top center;
+            background-size: 400px auto, auto auto, auto auto;
+            background-repeat: no-repeat;
+        }
 
         &__content {
+            width: 100%;
             padding-top: 15px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
             text-align: center;
-            padding: 15px;
+            padding-top: 15px;
             margin: auto;
         }
 
@@ -193,6 +187,8 @@
 
 
     .cases {
+        padding: 50px 0;
+
         &__item {
             grid-template-columns: 2fr 3fr;
 
@@ -270,14 +266,8 @@
     }
 
     .top {
-        padding-top: 250px;
-
         &__title {
             font-size: 28px;
-        }
-
-        &__descr {
-            display: none;
         }
     }
 
@@ -335,8 +325,16 @@
     .media {
         padding: 25px 0;
 
-        &__content {
-            margin-top: 0;
+        &__item {
+            margin-top: 15px;
+        }
+
+        &__logo {
+            width: 150px;
+        }
+
+        &__title {
+            font-size: 18px;
         }
     }
 
