@@ -1,13 +1,20 @@
 .media {
     padding: 50px 0;
 
-    &__item {
+    &__grid {
         margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    &__view {
+        width: 200px;
+        margin-bottom: 20px;
     }
 
     &__logo {
-        width: 200px;
-        margin-bottom: 20px;
+        height: 75px;
         display: block;
     }
 

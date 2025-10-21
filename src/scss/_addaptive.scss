@@ -70,8 +70,10 @@
         }
     }
 
-    .price {
-        font-size: 14px;
+    .media {
+        &__grid {
+            gap: 25px;
+        }
     }
 
     .title {
@@ -246,6 +248,12 @@
             order: 2;
             margin-top: 0;
             text-align: center;
+        }
+    }
+
+    .media {
+        &__grid {
+            grid-template-columns: 1fr;
         }
     }
 }

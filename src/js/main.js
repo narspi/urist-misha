@@ -78,9 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }).then(res => res.json())
                 .then(data => {
                     if (data.status === "success") {
-                        alert('Спасибо. Ваша заявка отправлена!')
+                        window.location = '/thank.html';
                     } else {
-                        alert('Упс что пошло не так. Попробуйте позже!')
+                        alert(data.message)
                     }
                 }).catch(err => {
                     alert('Упс что пошло не так. Попробуйте позже!')
