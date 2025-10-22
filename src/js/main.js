@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnCloseList = document.querySelectorAll('.form-popup__close');
     const galeryOpenBtnList = document.querySelectorAll('[data-galery]');
     const forms = document.querySelectorAll('[data-send]');
+    const modals = document.querySelectorAll('.form-popup');
+
+    modals.forEach((modal) => {
+        modal.addEventListener('click', (event) => {
+            const target = event.target;
+            if (target.closest('.form-popup__elem')) return;
+            else if (target.closest('.form-popup__close')) return;
+            else {
+                modal.classList.remove('active');
+                document.body.style.overflow = null;
+                document.body.style.paddingRight = null;
+                header.style.width = null;
+            }
+        })
+    });
 
     modalList.forEach((elem) => {
         elem.addEventListener('click', (e) => {
@@ -23,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     btnCloseList.forEach(elem => {
-        elem.addEventListener('click', (e) => {
+        elem.addEventListener('click', (event) => {
             const target = event.target;
             const modal = target.closest('.form-popup');
             modal.classList.remove('active');

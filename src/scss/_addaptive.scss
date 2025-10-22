@@ -1,5 +1,7 @@
 @media (max-height: 1080px) {
-    .top {
+
+    .top,
+    .thank-wrapper {
         min-height: 100vh;
     }
 }
@@ -93,12 +95,24 @@
 
 @media (max-width: 900px) {
     .header {
+        &__logo {
+            margin-left: -15px;
+
+            & span {
+                margin-left: -10px;
+            }
+        }
+
         &__links {
             gap: 10px;
         }
 
+        &__phone {
+            font-size: 18px;
+        }
+
         &__contacts {
-            gap: 10px;
+            gap: 5px;
         }
 
         &__callback {
@@ -256,12 +270,22 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .thank {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__descr {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 600px) {
     .header {
-        &__contacts {
-            gap: 10px;
+        &__logo {
+            margin-left: -5px;
         }
 
         &__social {
@@ -361,6 +385,12 @@
 
         &__policy {
             font-size: 12px;
+        }
+    }
+
+    .footer {
+        &__person {
+            font-size: 24px;
         }
     }
 }

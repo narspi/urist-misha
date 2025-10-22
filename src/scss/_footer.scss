@@ -3,12 +3,14 @@
 .footer {
     &__top {
         padding: 50px 0;
+        background-image: url("../img/footer-form-bg.webp");
+        background-repeat: no-repeat;
     }
 
     &__top-content {
         display: flex;
         flex-direction: column;
-        max-width: 500px;
+        max-width: 650px;
         margin: auto;
         text-align: center;
         font-size: 18px;
@@ -17,7 +19,7 @@
     &__person {
         font-family: var.$accent-font;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 36px;
         line-height: 1;
         margin: 0;
         display: inline-block;

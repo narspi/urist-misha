@@ -24,6 +24,7 @@
         font-weight: 400;
         font-size: 14px;
         letter-spacing: 0.5px;
+
         & span {
             margin-left: -5px;
         }
@@ -42,11 +43,17 @@
         list-style: none;
     }
 
-    &__nav-link,
-    &__phone {
+    &__nav-link {
         font-family: var.$accent-font;
         font-weight: 400;
         font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    &__phone {
+        font-family: var.$accent-font;
+        font-weight: 400;
+        font-size: 24px;
         letter-spacing: 0.5px;
     }
 
