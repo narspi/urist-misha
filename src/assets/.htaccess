@@ -1,0 +1,16 @@
+# Включаем mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # --- 🔒 Запрещаем прямой доступ к api.php и config.php ---
+    RewriteRule ^(api\.php|config\.php)$ - [F,L]
+
+    # --- (опционально) Разрешаем всё остальное ---
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+</IfModule>
+
+# --- Альтернативная защита (на случай, если mod_rewrite отключен) ---
+<FilesMatch "^(api\.php|config\.php)$">
+    Require all denied
+</FilesMatch>

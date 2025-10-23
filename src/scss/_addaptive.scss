@@ -7,6 +7,20 @@
 }
 
 @media (max-width: 1200px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__contacts {
+            margin-left: auto;
+        }
+    }
+
     .top {
         background-position: top 50px left -250px, top center, top center;
         min-height: unset;
@@ -78,17 +92,17 @@
         }
     }
 
-    .title {
-        font-size: 48px;
-    }
-
-    .header {
-        &__nav {
-            display: none;
+    .footer {
+        &__top-title {
+            font-size: 24px;
         }
 
-        &__contacts {
-            margin-left: auto;
+        &__top-notice {
+            font-size: 32px;
+        }
+
+        &__top-descr {
+            margin: 15px auto;
         }
     }
 }
@@ -162,6 +176,10 @@
         &__bottom-descr {
             margin: 0 auto;
             max-width: 500px;
+        }
+
+        &__social {
+            justify-content: center;
         }
     }
 
@@ -389,8 +407,20 @@
     }
 
     .footer {
-        &__person {
+        &__top {
+            padding: 100px 0;
+        }
+
+        &__top-title {
+            font-size: 18px;
+        }
+
+        &__top-notice {
             font-size: 24px;
+        }
+
+        &__top-descr {
+            font-size: 16px;
         }
     }
 }

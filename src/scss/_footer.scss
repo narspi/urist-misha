@@ -2,80 +2,56 @@
 
 .footer {
     &__top {
-        padding: 50px 0;
-        background-image: url("../img/footer-form-bg.webp");
+        padding: 150px 0 200px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)),url("../img/footer-form-bg.webp");
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__top-content {
         display: flex;
         flex-direction: column;
-        max-width: 650px;
-        margin: auto;
         text-align: center;
         font-size: 18px;
     }
 
-    &__person {
-        font-family: var.$accent-font;
-        font-weight: 400;
-        font-size: 36px;
+    &__top-title {
+        font-weight: 500;
+        font-size: 32px;
         line-height: 1;
         margin: 0;
         display: inline-block;
         text-align: center;
     }
 
-    &__contacts {
-        display: flex;
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__social {
-        display: flex;
-        gap: 5px;
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
-    }
-
-    &__social-link {
-        width: 24px;
-        height: 24px;
-        display: block;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-
-        &--tg {
-            background-image: url("../img/icons/telegram.svg");
-        }
-
-        &--whatsup {
-            background-image: url("../img/icons/whatsup.svg");
-        }
-    }
-
-    &__phone {
+    &__top-notice {
         font-family: var.$accent-font;
         font-weight: 400;
-        font-size: 24px;
-        letter-spacing: 0.5px;
+        font-size: 64px;
+        margin: 0;
+    }
+
+    &__top-descr {
+        max-width: 650px;
+        width: 100%;
+        margin: 1em auto 2em;
+        font-size: 18px;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        max-width: 650px;
+        width: 100%;
+        margin: auto;
     }
 
     &__form-input {
         color: #000000;
         border: 1px solid #c9c9c9;
         border-radius: 5px;
-        padding: 10px;
+        padding: 15px;
         flex-grow: 1;
 
         &:focus {
@@ -91,9 +67,9 @@
         border-radius: 5px;
         font-family: var.$accent-font;
         text-transform: uppercase;
-        font-size: 18;
+        font-size: 18px;
         font-weight: 400;
-        padding: 11px;
+        padding: 15px;
     }
 
     &__form-policy {
@@ -154,13 +130,51 @@
     }
 
     &__right {
-        font-size: 18px;
         max-width: 219px;
+        font-size: 18px;
+    }
 
-        & p {
-            margin: 0 0 20px;
+    &__phone-wrap {
+        margin: 0;
+    }
+
+    &__social {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        margin: 5px 0 15px;
+        padding-left: 0;
+    }
+
+    &__social-link {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &--tg {
+            background-image: url("../img/icons/telegram.svg");
+        }
+
+        &--whatsup {
+            background-image: url("../img/icons/whatsup.svg");
+        }
+
+        &--vk {
+            background-image: url("../img/icons/vk.svg");
         }
     }
 
+    &__phone {
+        font-family: var.$accent-font;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+    }
 
+    &__right-text {
+        margin: 0 0 15px;
+    }
 }
