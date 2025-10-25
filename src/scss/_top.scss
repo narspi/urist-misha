@@ -1,29 +1,35 @@
 @use "var";
 
 .top {
-    min-height: 1080px;
-    background-image: url("../img/misha-without-bg.webp"), linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("../img/top-bg.jpg");
+    min-height: 850px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)), url("../img/top-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left -250px, top center, top center;
-    padding-top: 210px;
-    padding-bottom: 70px;
+    background-position: top center, top center;
     display: flex;
 
     &__inner {
         display: flex;
+        width: 100%;
+        padding-top: 170px;
+        padding-bottom: 70px;
+        background-image: url("../img/top-bg-phone.webp");
+        background-repeat: no-repeat;
+        background-size: 600px auto;
+        background-position: bottom -100px right -28px;
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin: auto 0 auto 350px;
+        width: 100%;
+        margin: auto;
     }
 
     &__title {
         margin: 0;
-        font-size: 52px;
+        font-size: 48px;
         line-height: 1;
     }
 

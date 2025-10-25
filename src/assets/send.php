@@ -45,13 +45,8 @@ if (empty($phone)) {
 // Удаляем все символы, кроме цифр и знака "+"
 $cleanPhone = preg_replace('/[^\d\+]/', '', $phone);
 
-// Если номер начинается с "00", можно заменить на "+"
-if (strpos($cleanPhone, '00') === 0) {
-    $cleanPhone = '+' . substr($cleanPhone, 2);
-}
-
 // Проверяем формат
-if (!preg_match('/^\+?\d{7,15}$/', $cleanPhone)) {
+if (!preg_match('/^(?:8|\+7)?9\d{9}$/', $cleanPhone)) {
     http_response_code(400);
     echo json_encode(['status' => 'error', 'message' => 'Неверный формат телефона']);
     exit;

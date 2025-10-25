@@ -3,7 +3,7 @@
 .footer {
     &__top {
         padding: 150px 0 200px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)),url("../img/footer-form-bg.webp");
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),url("../img/footer-form-bg.webp");
         background-repeat: no-repeat;
         background-size: cover;
     }
